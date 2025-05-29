@@ -13,16 +13,16 @@ body {
 
 .container-login {
     text-align: center;
-    width: 540px;
-    padding: 40px 40px;
-    background-color: rgba(0, 0, 0, 0.24);
+    width: 590px; 
+    padding: 32px 40px;
+    background-color: rgba(0, 0, 0, 0.306);
     backdrop-filter: blur(9px);
     border-radius: 10px;
 }
 
 .container-login h1 {
     margin-bottom: 30px;
-    font-size: 60px;
+    font-size: 48px;
     text-shadow: 10px 10px 20px;
     font-family: 'Roboto', sans-serif;
     color: rgb(250, 250, 250);
@@ -33,17 +33,16 @@ body {
     text-align: left;
     margin-bottom: 10px;
     margin-left: 12px;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: rgb(250, 250, 250);
 }
 
 .nome-sobrenome-container {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     width: 100%;
-    max-width: 900px;
-    margin: 22px auto;
+    margin: 18px auto;
 }
 .nome-sobrenome-container .input-container {
     flex: 1;
@@ -52,8 +51,8 @@ body {
 }
 
 .input-container {
-    width: 440px;
-    margin: 22px auto;
+    width: 100%;
+    margin: 18px auto;
     background-color: transparent;
     border-radius: 60px;
     box-sizing: border-box;
@@ -72,13 +71,13 @@ body {
 }
 
 .input-icon-wrapper input {
-    height: 52px;
+    height: 60px;
     width: 100%;
     border-radius: 60px;
     border: none;
-    font-size: 22px;
-    padding-left: 24px;
-    padding-right: 56px; /* Mais espaço para o ícone e placeholder */
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 48px;
     background: transparent;
     outline: none;
     color: #333;
@@ -86,33 +85,34 @@ body {
 
 .input-icon-wrapper i {
     position: absolute;
-    right: 22px;
+    right: 18px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 19px;
+    font-size: 22px;
     color: #000000;
     pointer-events: none;
 }
 
-button {
-    margin-top: 30px;
-    padding: 18px;
-    width: 440px;
+.botao-login button {
+    margin-top: 24px;
+    padding: 14px;
+    width: 100%;
     border-radius: 80px;
     border: none;
     color: rgb(0, 0, 0);
     background-color: white;
     transition: 1s ease;
-    font-size: 22px;
-}
-
-button:hover {
-    transform: scale(1.08);
+    font-size: 20px;
+   transition: background 0.4s, transform 0.2s;
     cursor: pointer;
+}
+.botao-login:hover {
+    transform: scale(1.08);
+
 }
 
 input::placeholder {
-    font-size: 19px;
+    font-size: 17px;
     color: #000000;
     opacity: 1;
     text-overflow: ellipsis;
@@ -124,9 +124,52 @@ input::placeholder {
 
 .conta p {
     color: white;
-    font-size: 18px;
-    margin-top: 25px;
+    font-size: 20px;
+    margin-top: 18px;
     margin-bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+
+.social-login-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+    gap: 0;
+}
+
+.google-btn,
+.facebook-btn,
+.linkedin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff00;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    padding: 0;
+}
+
+.google-btn img,
+.facebook-btn img,
+.linkedin-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 0;     
+    margin: 0;       
+    display: block;  
+}
+.google-btn:hover,
+.facebook-btn:hover,
+.linkedin-btn:hover {
+    background: #f3f3f300;
+    transform: scale(1.08);
 }
