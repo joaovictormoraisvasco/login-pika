@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3; /* Cor de fundo opcional */
+    background-image: url(daniel-shapiro-Y8e_JaxKZLM-unsplash.jpg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.container-login{ 
+    min-height: 500px;
+    text-align: center;
+    width: 200px;
+    padding: 110px 200px;
+    background-color: rgba(0, 0, 0, 0.053);
+    backdrop-filter: blur(9px);
+    border-radius: 10px;
+   
+}
+.container-login h1,label{
+    color: white;
+}
+.container-login label{
+    position: relative;
+    right: 190px;
+    top: 20px;
+    font-size: 20px;
+}
+.container-login h1{
+    position:relative;
+    top: -70px;
+    font-size: 90px;
+    text-shadow: 10px 10px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+   button{
+    position: relative;
+    right: 20px;
+    top: 50px;
+    padding: 20px;
+    width: 270px;
+    border-radius: 80px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    transition: 1s ease;
+    font-size: 17px;
+   }
+   button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+   }
+   input::placeholder{
+    font-size: 17px;
+    position: relative;
+    right: -20px;
+   }
+   .input-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 150px;
+    align-items: center;
+    padding: 10px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 60px;
+    margin: 10px;
+    margin-top: 30px;
+   }
+   .input-container input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+    border: none;
+    gap: 10px;
+   }
+   .input-container i{
+    position: absolute;
+    left: 400px;
+    font-size: 20px;
+}
+.lembre-me{
+    display: flex;
+    align-items: center;
+}
+.lembre-me input[type="checkbox"] {
+    position: relative;
+    right: 120px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.lembre-me label{
+    position: relative;
+    right: 110px;
+}
+.conta a{
+color: rgb(0, 255, 247);
+}
+.conta p{
+    position: relative;
+    left: 50px;
+    top: -22px;
+    color: white;
+    font-size: 19.7px;
+    width: 300px;
+}
+
+   
+
+   
+   
