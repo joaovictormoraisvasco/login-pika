@@ -1,121 +1,198 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f3f3f3; /* Cor de fundo opcional */
-    background-image: url(daniel-shapiro-Y8e_JaxKZLM-unsplash.jpg);
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-color: #f3f3f3;
+    background-image: url(pfsj.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.container-login{ 
+.container-login {
     min-height: 500px;
     text-align: center;
-    width: 200px;
-    padding: 110px 190px;
-    background-color: rgba(0, 0, 0, 0.053);
+    width: 480px;
+    padding: 48px 48px;
+    background-color: rgba(0, 0, 0, 0.225);
     backdrop-filter: blur(9px);
     border-radius: 10px;
-   
 }
-.container-login h1,label{
-    color: white;
-}
-.container-login label{
-    position: relative;
-    right: 190px;
-    top: 20px;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
 
-}
-.container-login h1{
-    position:relative;
-    top: -70px;
-    font-size: 90px;
+.container-login h1 {
+    color: white;
+    position: relative;
+    top: -30px;
+    font-size: 60px;
     text-shadow: 10px 10px 20px;
     font-family: 'Roboto', sans-serif;
 }
-   button{
-    position: relative;
-    right: 20px;
-    top: 50px;
-    padding: 20px;
-    width: 270px;
-    border-radius: 80px;
-    border: none;
-    color: rgb(0, 0, 0);
-    background-color: white;
-    transition: 1s ease;
-    font-size: 17px;
-   }
-   button:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-   }
-   input::placeholder{
-    font-size: 17px;
-    position: relative;
-    right: -20px;
-   }
-   .input-container{
+
+.container-login label {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.input-container {
     display: flex;
-    justify-content: center;
-    position: relative;
-    right: 150px;
     align-items: center;
-    padding: 10px;
-    width: 450px;
-    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    background-color: #ffffff00;
     border-radius: 60px;
-    margin: 10px;
-    margin-top: 30px;
-   }
-   .input-container input{
-    position: absolute;
+    margin: 18px 0;
+    padding: 0 16px;
+    height: 64px; 
+    border: 2px solid #fffdfd;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.input-container input {
     height: 100%;
     width: 100%;
     border-radius: 60px;
+    background-color: transparent;
+    color: #f8f8f8;
     border: none;
-    gap: 10px;
-   }
-   .input-container i{
-    position: absolute;
-    left: 400px;
-    font-size: 20px;
+    font-size: 24px; 
+    outline: none;
+    padding-left: 10px;
+    padding-right: 38px;
+    text-align: left;
 }
-.lembre-me{
+
+.input-container i {
+    color: #ffffff;
+    position: absolute;
+    right: 18px;
+    font-size: 26px; 
+    
+}
+
+input::placeholder {
+    font-size: 20px; 
+    color: #fffefe;
+    
+}
+
+.lembre-e-conta {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 100%;
 }
+
+.lembre-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .lembre-me input[type="checkbox"] {
     position: relative;
-    right: 120px;
-    top: 20px;
-    width: 16px;
-    height: 16px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #00bbff;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.lembre-me label {
+    position: relative;
+    right: -10px;
+    color: white;
+    font-size: 19px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.conta {
+    margin-left: 24px;
+}
+
+.conta a {
+    color: rgb(0, 187, 255);
+}
+
+.conta p {
+    position: relative;
+    top: -39px;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.social-login-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 18px;
+}
+
+.google-btn,
+.facebook-btn,
+.linkedin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    padding: 0;
+}
+
+.google-btn img,
+.facebook-btn img,
+.linkedin-btn img {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.google-btn:hover,
+.facebook-btn:hover,
+.linkedin-btn:hover {
+    background: #f3f3f300;
+    transform: scale(1.08);
+}
+
+.botao-login button {
+    margin-top: 24px;
+    padding: 14px;
+    width: 100%;
+    border-radius: 80px;
+    border: 2px solid white;
+    color: rgba(255, 255, 255, 0.913);
+    background-color: rgba(0, 0, 0, 0.29);
+    font-size: 20px;
+    transition: transform 0.4s cubic-bezier(.4,0,.2,1), background 0.4s;
+}
+
+.botao-login button:hover {
+    transform: scale(1.08);
     cursor: pointer;
 }
-.lembre-me label{
-    position: relative;
-    right: 110px;
-}
-.conta a{
-color: rgb(0, 187, 255);
-}
-.conta p{
-    position: relative;
-    left: 50px;
-    top: -22px;
-    color: white;
-    font-size: 19.7px;
-    width: 300px;
-}
-
-   
-
-   
-   
