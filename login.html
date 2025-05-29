@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -13,25 +13,37 @@
         <h1>Login</h1>
         <form action="/login" method="POST">
             <div class="campo-usuario">
-                   <label for="usuario">Usuário:</label>
-              <div class="input-container">
+                <label for="usuario">Usuário:</label>
+                <div class="input-container">
                     <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
-                    <i class="fas fa-user"></i><br><br>
-              </div>
+                    <i class="fas fa-user"></i>
+                </div>
             </div>
             <div class="campo-senha">
-                  <label for="senha">Senha:</label>
-                 <div class="input-container">
-                  <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-                  <i class="fas fa-lock"></i><br><br>
-                 </div>
-                 <div class="lembre-me">
-                    <input type="checkbox">
+                <label for="senha">Senha:</label>
+                <div class="input-container">
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="lembre-me">
+                    <input type="checkbox" id="lembre-me">
                     <label for="lembre-me">lembre-me</label>
-                 </div>
-                 <div class="conta">
-                    <p>ainda nao tem conta?<a href="conta">crie uma</a></p>
-                 </div>
+                </div>
+                <div class="conta">
+                    <p>ainda nao tem conta? <a href="cadastro.html">crie uma</a></p>
+                </div>
+            </div>
+            <!-- Social login alinhado -->
+            <div class="social-login-row">
+                <button type="button" class="google-btn">
+                    <img src="sm_5b01250dd4dd2-removebg-preview.png" alt="Google">
+                </button>
+                <button type="button" class="linkedin-btn">
+                    <img src="linkedin-removebg-preview.png" alt="LinkedIn">
+                </button>
+                <button type="button" class="facebook-btn">
+                    <img src="facebook-removebg-preview.png" alt="Facebook">
+                </button>
             </div>
             <div class="botao-login">
                 <button type="submit">Entrar</button>
