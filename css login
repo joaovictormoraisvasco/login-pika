@@ -45,7 +45,7 @@ body {
     align-items: center;
     position: relative;
     width: 100%;
-    background-color: #ffffff00;
+    background-color: #00000064;
     border-radius: 60px;
     margin: 18px 0;
     padding: 0 16px;
@@ -53,8 +53,18 @@ body {
     border: 2px solid #fffdfd;
     box-sizing: border-box;
     justify-content: flex-start;
+     transition: 
+        box-shadow 0.3s cubic-bezier(.4,0,.2,1),
+        background-color 0.3s cubic-bezier(.4,0,.2,1),
+        border-color 0.3s cubic-bezier(.4,0,.2,1),
+        transform 0.3s cubic-bezier(.4,0,.2,1);
 }
-
+.input-container:has(input:focus) {
+   box-shadow: 0 0 0 2px rgb(0, 198, 242), 0 0 20px rgb(9, 253, 221);
+    background-color: black;
+    border-color: transparent;
+    transform: translateY(-5px);
+}
 .input-container input {
     height: 100%;
     width: 100%;
@@ -96,10 +106,12 @@ input::placeholder {
     display: flex;
     align-items: center;
     gap: 8px;
+    ;
 }
 
 .lembre-me input[type="checkbox"] {
     position: relative;
+    top: 3px;
     right: -10px;
     width: 20px;
     height: 20px;
@@ -111,6 +123,7 @@ input::placeholder {
 
 .lembre-me label {
     position: relative;
+    top: 3px;
     right: -10px;
     color: white;
     font-size: 19px;
